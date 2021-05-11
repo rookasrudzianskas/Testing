@@ -1,4 +1,6 @@
-# learn-vuex
+# learn-vuex, link below
+
+https://rokas-vuex-app.netlify.app/#/
 
 ## Project setup
 ```
