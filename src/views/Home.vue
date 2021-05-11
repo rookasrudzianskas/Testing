@@ -14,7 +14,7 @@
       <button @click="$store.dispatch('increaseCounter')">+</button>
     </div>
     <div>
-      <input type="text" placeholder="Enter color code">
+      <input type="text" v-model="colorCode" placeholder="Enter color code">
     </div>
   </div>
 </template>
@@ -24,6 +24,16 @@
 <script>
 export default {
   name: 'Home',
+  computed: {
+    colorCode: {
+      get() {
+        return this.$store.state.colorCode
+      },
+      set(newValue) {
+        this.$store.dispatch('setColorCode', newValue)
+      }
+    }
+  }
 }
 </script>
 
