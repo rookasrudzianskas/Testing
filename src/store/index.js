@@ -13,6 +13,9 @@ export default createStore({
     },
   },
   actions: {
+    increaseCounter() {
+      console.log("WORKING")
+    }
   },
   getters: {
 
